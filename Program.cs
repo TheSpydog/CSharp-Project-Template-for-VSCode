@@ -1,6 +1,6 @@
 using System;
 
-namespace VSCodeCSharpTemplate
+namespace <project_name>
 {
     class Program
     {

@@ -4,10 +4,10 @@
         {
             "name": "Launch",
             "type": "mono",
-            "preLaunchTask": "Build (Debug)",
             "request": "launch",
-            "program": "${workspaceRoot}/bin/Debug/${workspaceFolderBasename}.exe",
+            "program": "${workspaceRoot}/bin/Debug/<project_name>.exe",
             "cwd": "${workspaceRoot}",
+            "preLaunchTask": "Build (Debug)"
         },
         {
             "name": "Attach",

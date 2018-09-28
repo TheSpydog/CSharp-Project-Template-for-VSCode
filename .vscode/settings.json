@@ -1,0 +1,4 @@
+{
+    "omnisharp.autoStart": false,
+    "csharp.referencesCodeLens.enabled": false
+}
