@@ -1,0 +1,23 @@
+{
+    // NOTE: Windows users can change "mono" to "clr" wherever it appears for 64-bit .NET Framework debugging.
+    // https://github.com/OmniSharp/omnisharp-vscode/wiki/Desktop-.NET-Framework
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "mono",
+            "preLaunchTask": "Build (Debug)",
+            "request": "launch",
+            "program": "${workspaceRoot}/bin/Debug/${workspaceFolderBasename}.exe",
+            "cwd": "${workspaceRoot}",
+        },
+        {
+            "name": "Attach",
+            "type": "mono",
+            "request": "attach",
+            "address": "localhost",
+            "port": 55555
+        }
+    ]
+}
