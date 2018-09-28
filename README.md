@@ -21,7 +21,7 @@ Rather than using .NET Core, this project exclusively uses Mono and .NET Framewo
   - [Mono Debug extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.mono-debug) (required for Mac, optional for Windows)
 - [Mono](https://www.mono-project.com/download/stable/) (required for Mac, optional for Windows)
 - [Visual Studio 2017](https://visualstudio.microsoft.com/vs/) or [Build Tools for Visual Studio 2017](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017) (required for Windows to get MSBuild)
-  - You must also [add msbuild to your PATH](https://stackoverflow.com/questions/6319274/how-do-i-run-msbuild-from-the-command-line-using-windows-sdk-7-1) to build projects. 
+  - You must also [add msbuild to your PATH](https://stackoverflow.com/a/35733083) to build projects. 
 
 **Instructions:**
 1. Download and unzip the ZIP archive.
