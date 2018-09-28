@@ -1,7 +1,4 @@
 {
-    // NOTE: Windows users can change "mono" to "clr" wherever it appears for 64-bit .NET Framework debugging.
-    // https://github.com/OmniSharp/omnisharp-vscode/wiki/Desktop-.NET-Framework
-
     "version": "0.2.0",
     "configurations": [
         {
