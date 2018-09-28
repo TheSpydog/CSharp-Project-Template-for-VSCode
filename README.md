@@ -31,7 +31,9 @@ Rather than using .NET Core, this project exclusively uses Mono and .NET Framewo
 - From the Command Pallete, you can now build (and optionally run) your project.
 
 **Why Does This Exist?**
+
 The creation of this project was motivated by wanting to develop C# projects on Mac, and finding out that...
+
 1. .NET Core is a opinionated and temperamental beast. I have high hopes for its future, but it's got a lot of weird bits right now. For instance, it builds dll's instead of exe's (???), the CoreCLR behaves very differently than Mono or .NET Framework in certain conditions, and it's not always compatible with projects created for .NET Framework.
 2. Visual Studio for Mac runs projects in some black-box way that differs from just running Mono, leading to frustrating and inconsistent behavior. For instance, VS for Mac doesn't appear to use any of the default Mac search paths for .dylib files, making dynamic linking near impossible. In contrast, `mono` finds and links external libraries without a problem.
 
