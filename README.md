@@ -23,13 +23,14 @@ Rather than using .NET Core, this project exclusively uses Mono and .NET Framewo
 - [Visual Studio 2017](https://visualstudio.microsoft.com/vs/) or [Build Tools for Visual Studio 2017](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017) (required for Windows to get MSBuild)
 
 **Instructions:**
-- Download and unzip the ZIP archive.
-- Copy the Template folder and paste it wherever you want. Rename it to the name of your new project.
-- Rename the csproj file from `<project_name>` to the intended name of your project.
-- Do a Find+Replace for `<project_name>` in the files to change every occurence in the sample `Program.cs`, `tasks.json`, and `launch.json`.
-- From the Command Pallete, run the "Restore Project" build task to initialize the project.
-- From the VSCode Command list, restart OmniSharp so that Intellisense can take effect. You may also want to change the project's `settings.json` so you don't have to do this every time you open the project.
-- From the Command Pallete, you can now build (and optionally run) your project.
+1. Download and unzip the ZIP archive.
+2. Copy the Template folder and paste it wherever you want. Rename it to the name of your new project.
+3. Open the folder in VS Code.
+4. Rename the csproj file from `<project_name>` to the intended name of your project.
+5. Do a Find+Replace for `<project_name>` in the project to change every occurence to your actual project name.
+6. From the Command Pallete, run the "Restore Project" build task to initialize the project.
+7. From the VSCode Command list, restart OmniSharp so that Intellisense can take effect. You may also want to change the project's `settings.json` so you don't have to do this every time you open the project.
+8. From the Command Pallete, you can now build (and optionally run) your project.
 
 **Why Does This Exist?**
 
