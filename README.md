@@ -26,8 +26,8 @@ Rather than using .NET Core, this project exclusively uses Mono and .NET Framewo
 1. Download and unzip the ZIP archive.
 2. Copy the Template folder and paste it wherever you want. Rename it to the name of your new project.
 3. Open the folder in VS Code.
-4. Rename the csproj file from `<project_name>` to the intended name of your project.
-5. Do a Find+Replace for `<project_name>` in the project to change every occurence to your actual project name.
+4. Rename the csproj file from `project_name` to the intended name of your project.
+5. Do a Find+Replace for `project_name` in the project to change every occurence to your actual project name.
 6. From the Command Pallete, run the "Restore Project" build task to initialize the project.
 7. From the VSCode Command list, restart OmniSharp so that Intellisense can take effect. You may also want to change the project's `settings.json` so you don't have to do this every time you open the project.
 8. From the Command Pallete, you can now build (and optionally run) your project.
@@ -40,5 +40,5 @@ The creation of this project was motivated by wanting to develop C# projects on 
 2. Visual Studio for Mac runs projects in some black-box way that differs from just running Mono, leading to frustrating and inconsistent behavior. For instance, VS for Mac doesn't appear to use any of the default Mac search paths for .dylib files, making dynamic linking near impossible. In contrast, `mono` finds and links external libraries without a problem.
 
 **Known Issues:**
-- This hasn't been thoroughly tested, so there may be glaring bugs.
+- This hasn't been thoroughly tested, so there may be significant bugs.
 - No Linux support for Build+Run tasks. In theory this should be really easy to add (just copy-paste the `osx` part of the `tasks.json` file and change it to `linux`) but I don't have a Linux machine to test on.
