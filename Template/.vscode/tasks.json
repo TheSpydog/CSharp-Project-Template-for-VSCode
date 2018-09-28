@@ -52,14 +52,14 @@
             "osx":{
                 "command": "mono",
                 "args": [
-                    "${workspaceFolder}/bin/Debug/<project_name>.exe"
+                    "${workspaceFolder}/bin/Debug/project_name.exe"
                 ],
             },
             "windows":{
                 "command": "cmd",
                 "args": [
                     "/k",
-                    "${workspaceFolder}/bin/Debug/<project_name>.exe"
+                    "${workspaceFolder}/bin/Debug/project_name.exe"
                 ]
             },
             "dependsOn": "Build (Debug)",
@@ -73,14 +73,14 @@
             "osx":{
                 "command": "mono",
                 "args": [
-                    "${workspaceFolder}/bin/Release/<project_name>.exe"
+                    "${workspaceFolder}/bin/Release/project_name.exe"
                 ]
             },
             "windows":{
                 "command": "cmd",
                 "args": [
                     "/k",
-                    "${workspaceFolder}/bin/Release/<project_name>.exe"
+                    "${workspaceFolder}/bin/Release/project_name.exe"
                 ]
             },
             "dependsOn": "Build (Release)",
