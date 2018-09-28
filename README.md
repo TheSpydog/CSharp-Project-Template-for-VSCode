@@ -10,7 +10,7 @@ Rather than using .NET Core, this project exclusively uses Mono and .NET Framewo
   - `Restore Project`: Initializes the project and updates project data. Run this every time you set up a new project, and again if you add references to other projects.
   - `Build (Debug/Release)`: Builds the project with the selected configuration.
   - `Build and Run (Debug/Release)`: Builds the project with the selected configuration and subsequently runs it with `mono` on Mac or `cmd /k` on Windows.
-  - `Clean Project`: Cleans the output (`/bin`) directory.
+  - `Clean Project`: Cleans the output directory.
 - Debugging support:
   - Integrates with the Mono Debug extension (or, optionally, `clr` [for 64-bit programs on Windows](https://github.com/OmniSharp/omnisharp-vscode/wiki/Desktop-.NET-Framework)) with pre-written Launch and Attach tasks.
 
