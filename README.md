@@ -3,10 +3,6 @@ This is a simple C# project template meant to accelerate .NET Framework and Mono
 
 Rather than using .NET Core, this project exclusively uses Mono and .NET Framework tooling (via `msbuild`). As a result, output binaries will be .exe files instead of the .dll files that .NET Core produces. This is more in line with the behavior of the Visual Studio 2017 / Visual Studio for Mac.
 
-The creation of this project was motivated by wanting to develop C# projects on Mac, and finding out that...
-1. .NET Core is a opinionated and temperamental beast that doesn't always play nice with .NET Framework projects. (Hopefully this will improve in the future!)
-2. Visual Studio for Mac runs projects in some black-box way that differs from just running Mono, leading to frustrating and inconsistent behavior.
-
 **Features:**
 - Uses the new .csproj format, so you can easily edit the project by hand.
   - Because of this, the template folder is copy-pastable. No need to worry about unique project GUIDs!
@@ -16,7 +12,7 @@ The creation of this project was motivated by wanting to develop C# projects on 
   - `Build and Run (Debug/Release)`: Builds the project with the selected configuration and subsequently runs it with `mono` on Mac or `cmd /k` on Windows.
   - `Clean Project`: Cleans the output (`/bin`) directory.
 - Debugging support:
-  - Integrates with the Mono Debug extension (or, optionally, `clr` debugging for 64-bit programs on Windows) for debugging in-editor.
+  - Integrates with the Mono Debug extension (or, optionally, `clr` [for 64-bit programs on Windows](https://github.com/OmniSharp/omnisharp-vscode/wiki/Desktop-.NET-Framework)) with pre-written Launch and Attach tasks.
 
 **Prerequisites:**
 - [Visual Studio Code](https://code.visualstudio.com)
@@ -34,6 +30,11 @@ The creation of this project was motivated by wanting to develop C# projects on 
 - From the VSCode Command list, restart OmniSharp so that Intellisense can take effect. You may also want to change the project's `settings.json` so you don't have to do this every time you open the project.
 - From the Command Pallete, you can now build (and optionally run) your project.
 
+**Why Does This Exist?**
+The creation of this project was motivated by wanting to develop C# projects on Mac, and finding out that...
+1. .NET Core is a opinionated and temperamental beast. I have high hopes for its future, but it's got a lot of weird bits right now. For instance, it builds dll's instead of exe's (???), the CoreCLR behaves very differently than Mono or .NET Framework in certain conditions, and it's not always compatible with projects created for .NET Framework.
+2. Visual Studio for Mac runs projects in some black-box way that differs from just running Mono, leading to frustrating and inconsistent behavior. For instance, VS for Mac doesn't appear to use any of the default Mac search paths for .dylib files, making dynamic linking near impossible. In contrast, `mono` finds and links external libraries without a problem.
+
 **Known Issues:**
 - This hasn't been thoroughly tested, so there may be glaring bugs.
-- No Linux support for Build+Run tasks. In theory this should be really easy to add (just copy-paste the `osx` part of the `tasks.json` file and change it to `linux`) but I don't have a Linux machine to test on so I'm not sure.
+- No Linux support for Build+Run tasks. In theory this should be really easy to add (just copy-paste the `osx` part of the `tasks.json` file and change it to `linux`) but I don't have a Linux machine to test on.
