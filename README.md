@@ -1,5 +1,5 @@
-# VSCode-CSharp-Template
-This is a simple C# project template meant to accelerate .NET Framework and Mono workflows in Visual Studio Code.
+# Mono Template for VSCode
+This is a simple C# project template meant to accelerate Mono and .NET Framework workflows in Visual Studio Code.
 
 Rather than using .NET Core, this project exclusively uses Mono and .NET Framework tooling (via `msbuild`). As a result, output binaries will be .exe files instead of the .dll files that .NET Core produces. This is more in line with the behavior of the Visual Studio 2017 / Visual Studio for Mac.
 
