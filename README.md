@@ -6,6 +6,7 @@ Rather than using .NET Core, this project exclusively uses Mono and .NET Framewo
 **Features:**
 - Uses the new .csproj format, so you can easily edit the project by hand.
   - Because of this, the template folder is copy-pastable. No need to worry about unique project GUIDs!
+- Works on Mac and Windows.
 - Convenient build tasks:
   - `Restore Project`: Initializes the project and updates project data. Run this every time you set up a new project, and again if you add references to other projects.
   - `Build (Debug/Release)`: Builds the project with the selected configuration.
